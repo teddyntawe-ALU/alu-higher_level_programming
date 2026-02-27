@@ -1,0 +1,5 @@
+   #!/bin/bash
+   python3 $PYFILE
+   EOF
+
+chmod +x 0-run
