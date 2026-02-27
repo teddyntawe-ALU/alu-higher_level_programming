@@ -1,7 +1,3 @@
-# Python - Hello, World
+# ALU Higher Level Programming
 
-This project contains Python scripts and shell scripts for learning Python basics.
-
-## Tasks
-
-0. **Run Python file** - Shell script that runs a Python script stored in environment variable $PYFILE
+This repository contains projects for learning higher-level programming concepts, starting with Python.
