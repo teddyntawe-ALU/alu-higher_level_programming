@@ -34,7 +34,6 @@ class Square:
         """Retrieves the position."""
         return self.__position
 
-    @size.setter
     @position.setter
     def position(self, value):
         """Sets the position with validation."""
@@ -54,6 +53,7 @@ class Square:
             print("")
             return
 
-        [print("") for i in range(self.__position[1])]
+        for i in range(self.__position[1]):
+            print("")
         for i in range(self.__size):
             print("{}{}".format(" " * self.__position[0], "#" * self.__size))
