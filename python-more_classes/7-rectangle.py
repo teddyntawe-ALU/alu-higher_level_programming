@@ -56,13 +56,9 @@ class Rectangle:
         """Returns the string representation using print_symbol."""
         if self.__width == 0 or self.__height == 0:
             return ""
-        
-        # Use str() to handle cases where print_symbol is a list or other type
         symbol = str(self.print_symbol)
-        rect_str = []
-        for i in range(self.__height):
-            rect_str.append(symbol * self.__width)
-        return "\n".join(rect_str)
+        rect_rows = [symbol * self.__width for _ in range(self.__height)]
+        return "\n".join(rect_rows)
 
     def __repr__(self):
         """Returns a string representation to recreate the instance."""
